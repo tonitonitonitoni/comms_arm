@@ -1,0 +1,46 @@
+[0.099s] Invoking command in '/home/moon/arm_ws/build/robotic_arm_6dof': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/moon/Downloads/panorama_ws/install/gazebo_panorama:/opt/ros/humble /usr/bin/cmake --build /home/moon/arm_ws/build/robotic_arm_6dof -- -j4 -l4
+[0.270s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.354s] -- Configuring done
+[1.374s] -- Generating done
+[1.387s] -- Build files have been written to: /home/moon/arm_ws/build/robotic_arm_6dof
+[1.543s] Invoked command in '/home/moon/arm_ws/build/robotic_arm_6dof' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/moon/Downloads/panorama_ws/install/gazebo_panorama:/opt/ros/humble /usr/bin/cmake --build /home/moon/arm_ws/build/robotic_arm_6dof -- -j4 -l4
+[1.608s] Invoking command in '/home/moon/arm_ws/build/robotic_arm_6dof': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/moon/Downloads/panorama_ws/install/gazebo_panorama:/opt/ros/humble /usr/bin/cmake --install /home/moon/arm_ws/build/robotic_arm_6dof
+[1.653s] -- Install configuration: ""
+[1.654s] -- Up-to-date: /home/moon/arm_ws/install/robotic_arm_6dof/share/robotic_arm_6dof/config
+[1.656s] -- Up-to-date: /home/moon/arm_ws/install/robotic_arm_6dof/share/robotic_arm_6dof/config/joint_names_robotic_arm_6dof.yaml
+[1.658s] -- Up-to-date: /home/moon/arm_ws/install/robotic_arm_6dof/share/robotic_arm_6dof/launch
+[1.658s] -- Up-to-date: /home/moon/arm_ws/install/robotic_arm_6dof/share/robotic_arm_6dof/launch/display.launch.py
+[1.663s] -- Up-to-date: /home/moon/arm_ws/install/robotic_arm_6dof/share/robotic_arm_6dof/meshes
+[1.663s] -- Up-to-date: /home/moon/arm_ws/install/robotic_arm_6dof/share/robotic_arm_6dof/meshes/gear_right.STL
+[1.664s] -- Up-to-date: /home/moon/arm_ws/install/robotic_arm_6dof/share/robotic_arm_6dof/meshes/elbow_Link.STL
+[1.665s] -- Up-to-date: /home/moon/arm_ws/install/robotic_arm_6dof/share/robotic_arm_6dof/meshes/base_rotator.STL
+[1.665s] -- Up-to-date: /home/moon/arm_ws/install/robotic_arm_6dof/share/robotic_arm_6dof/meshes/wrist_Link.STL
+[1.667s] -- Up-to-date: /home/moon/arm_ws/install/robotic_arm_6dof/share/robotic_arm_6dof/meshes/finger_left.STL
+[1.667s] -- Up-to-date: /home/moon/arm_ws/install/robotic_arm_6dof/share/robotic_arm_6dof/meshes/anchor_left.STL
+[1.667s] -- Up-to-date: /home/moon/arm_ws/install/robotic_arm_6dof/share/robotic_arm_6dof/meshes/shoulder_link.STL
+[1.668s] -- Up-to-date: /home/moon/arm_ws/install/robotic_arm_6dof/share/robotic_arm_6dof/meshes/base_link.STL
+[1.668s] -- Up-to-date: /home/moon/arm_ws/install/robotic_arm_6dof/share/robotic_arm_6dof/meshes/anchor_right.STL
+[1.668s] -- Up-to-date: /home/moon/arm_ws/install/robotic_arm_6dof/share/robotic_arm_6dof/meshes/end_base.STL
+[1.669s] -- Up-to-date: /home/moon/arm_ws/install/robotic_arm_6dof/share/robotic_arm_6dof/meshes/gear_left.STL
+[1.669s] -- Up-to-date: /home/moon/arm_ws/install/robotic_arm_6dof/share/robotic_arm_6dof/meshes/finger_right.STL
+[1.669s] -- Up-to-date: /home/moon/arm_ws/install/robotic_arm_6dof/share/robotic_arm_6dof/urdf
+[1.670s] -- Up-to-date: /home/moon/arm_ws/install/robotic_arm_6dof/share/robotic_arm_6dof/urdf/robotic_arm_6dof.csv
+[1.671s] -- Up-to-date: /home/moon/arm_ws/install/robotic_arm_6dof/share/robotic_arm_6dof/urdf/robotic_arm_6dof.urdf
+[1.674s] -- Up-to-date: /home/moon/arm_ws/install/robotic_arm_6dof/share/robotic_arm_6dof/rviz
+[1.674s] -- Up-to-date: /home/moon/arm_ws/install/robotic_arm_6dof/share/robotic_arm_6dof/rviz/config.rviz
+[1.674s] -- Up-to-date: /home/moon/arm_ws/install/robotic_arm_6dof/share/ament_index/resource_index/package_run_dependencies/robotic_arm_6dof
+[1.675s] -- Installing: /home/moon/arm_ws/install/robotic_arm_6dof/share/ament_index/resource_index/parent_prefix_path/robotic_arm_6dof
+[1.675s] -- Up-to-date: /home/moon/arm_ws/install/robotic_arm_6dof/share/robotic_arm_6dof/environment/ament_prefix_path.sh
+[1.675s] -- Installing: /home/moon/arm_ws/install/robotic_arm_6dof/share/robotic_arm_6dof/environment/ament_prefix_path.dsv
+[1.685s] -- Up-to-date: /home/moon/arm_ws/install/robotic_arm_6dof/share/robotic_arm_6dof/environment/path.sh
+[1.686s] -- Installing: /home/moon/arm_ws/install/robotic_arm_6dof/share/robotic_arm_6dof/environment/path.dsv
+[1.686s] -- Up-to-date: /home/moon/arm_ws/install/robotic_arm_6dof/share/robotic_arm_6dof/local_setup.bash
+[1.686s] -- Up-to-date: /home/moon/arm_ws/install/robotic_arm_6dof/share/robotic_arm_6dof/local_setup.sh
+[1.687s] -- Up-to-date: /home/moon/arm_ws/install/robotic_arm_6dof/share/robotic_arm_6dof/local_setup.zsh
+[1.687s] -- Installing: /home/moon/arm_ws/install/robotic_arm_6dof/share/robotic_arm_6dof/local_setup.dsv
+[1.689s] -- Installing: /home/moon/arm_ws/install/robotic_arm_6dof/share/robotic_arm_6dof/package.dsv
+[1.690s] -- Up-to-date: /home/moon/arm_ws/install/robotic_arm_6dof/share/ament_index/resource_index/packages/robotic_arm_6dof
+[1.693s] -- Up-to-date: /home/moon/arm_ws/install/robotic_arm_6dof/share/robotic_arm_6dof/cmake/robotic_arm_6dofConfig.cmake
+[1.697s] -- Up-to-date: /home/moon/arm_ws/install/robotic_arm_6dof/share/robotic_arm_6dof/cmake/robotic_arm_6dofConfig-version.cmake
+[1.699s] -- Up-to-date: /home/moon/arm_ws/install/robotic_arm_6dof/share/robotic_arm_6dof/package.xml
+[1.707s] Invoked command in '/home/moon/arm_ws/build/robotic_arm_6dof' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/moon/Downloads/panorama_ws/install/gazebo_panorama:/opt/ros/humble /usr/bin/cmake --install /home/moon/arm_ws/build/robotic_arm_6dof
