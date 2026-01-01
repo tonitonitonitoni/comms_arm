@@ -1,9 +1,0 @@
-/home/moon/arm_ws/build/robotic_arm_6dof/CMakeFiles/uninstall.dir
-/home/moon/arm_ws/build/robotic_arm_6dof/CMakeFiles/robotic_arm_6dof_uninstall.dir
-/home/moon/arm_ws/build/robotic_arm_6dof/CMakeFiles/test.dir
-/home/moon/arm_ws/build/robotic_arm_6dof/CMakeFiles/edit_cache.dir
-/home/moon/arm_ws/build/robotic_arm_6dof/CMakeFiles/rebuild_cache.dir
-/home/moon/arm_ws/build/robotic_arm_6dof/CMakeFiles/list_install_components.dir
-/home/moon/arm_ws/build/robotic_arm_6dof/CMakeFiles/install.dir
-/home/moon/arm_ws/build/robotic_arm_6dof/CMakeFiles/install/local.dir
-/home/moon/arm_ws/build/robotic_arm_6dof/CMakeFiles/install/strip.dir

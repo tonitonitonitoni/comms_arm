@@ -1,0 +1,853 @@
+<?xml version="1.0"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="aligned_arm"
+  xmlns:xacro="http://ros.org/wiki/xacro">
+  <link name="world"/>
+
+  <link name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.00944732691721334 -0.00485491048454716 0.0434935093034806"
+        rpy="0 0 0" />
+      <mass
+        value="0.0724481766269399" />
+      <inertia
+        ixx="0.001"
+        ixy="0"
+        ixz="0"
+        iyy="0.001"
+        iyz="0"
+        izz="0.001"/>
+
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://aligned_arm/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://aligned_arm/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <link name="shoulder">
+    <inertial>
+      <origin
+        xyz="-0.0138375246543273 -0.000136423090262103 0.0642577277432398"
+        rpy="0 0 0" />
+      <mass
+        value="0.0383299135323012" />
+      <inertia
+        ixx="0.001"
+        ixy="0"
+        ixz="0"
+        iyy="0.001"
+        iyz="0"
+        izz="0.001"/>
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://aligned_arm/meshes/shoulder.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://aligned_arm/meshes/shoulder.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <link name="elbow">
+    <inertial>
+      <origin
+        xyz="0.0515 0 0.00141467083630039"
+        rpy="0 0 0" />
+      <mass
+        value="0.013540978703673" />
+      <inertia
+        ixx="0.001"
+        ixy="0"
+        ixz="0"
+        iyy="0.001"
+        iyz="0"
+        izz="0.001"/>
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://aligned_arm/meshes/elbow.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://aligned_arm/meshes/elbow.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <link name="wrist">
+    <inertial>
+      <origin
+        xyz="0.0206267882659475 -0.000711621284712166 0.000259074135945421"
+        rpy="0 0 0" />
+      <mass
+        value="0.0403064898175783" />
+      <inertia
+        ixx="0.001"
+        ixy="0"
+        ixz="0"
+        iyy="0.001"
+        iyz="0"
+        izz="0.001"/>
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://aligned_arm/meshes/wrist.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://aligned_arm/meshes/wrist.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <link name="wrist2">
+    <inertial>
+      <origin
+        xyz="0.0134999999994358 -0.0148568442704152 -0.00474215572827058"
+        rpy="0 0 0" />
+      <mass
+        value="0.0631188483632319" />
+      <inertia
+        ixx="0.001"
+        ixy="0"
+        ixz="0"
+        iyy="0.001"
+        iyz="0"
+        izz="0.001"/>
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://aligned_arm/meshes/wrist2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://aligned_arm/meshes/wrist2.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- GRIPPER -->
+   <!-- ================= GRIPPER (GAZEBO-SAFE) ================= -->
+
+<link name="end_base">
+  <inertial>
+    <origin xyz="0 0 0"/>
+    <mass value="0.4"/>
+    <inertia ixx="0.01" iyy="0.01" izz="0.01"
+             ixy="0" ixz="0" iyz="0"/>
+  </inertial>
+
+  <visual>
+    <geometry>
+      <mesh filename="package://aligned_arm/meshes/end_base.STL"/>
+    </geometry>
+  </visual>
+
+  <!-- simplified collision -->
+  <collision>
+    <geometry>
+      <box size="0.05 0.05 0.02"/>
+    </geometry>
+  </collision>
+</link>
+
+<!-- attach gripper base
+<joint name="end_joint" type="fixed">
+  <origin xyz="0.023 -0.045 -0.02"
+          rpy="1.57 0 -1.57"/>
+  <parent link="wrist2"/>
+  <child link="end_base"/>
+</joint> -->
+
+<!-- ================= VISUAL-ONLY FINGERS ================= -->
+
+<link name="gear_right">
+  <visual>
+    <geometry>
+      <mesh filename="package://aligned_arm/meshes/gear_right.STL"/>
+    </geometry>
+  </visual>
+</link>
+
+<joint name="gear_right_joint" type="fixed">
+  <origin xyz="0.03 -0.015741 0.0043" rpy="0 0 -0.60373"/>
+  <parent link="end_base"/>
+  <child link="gear_right"/>
+</joint>
+
+<link name="gear_left">
+  <visual>
+    <geometry>
+      <mesh filename="package://aligned_arm/meshes/gear_left.STL"/>
+    </geometry>
+  </visual>
+</link>
+
+<joint name="gear_left_joint" type="fixed">
+  <origin xyz="0.0305 0.01226 0.0068" rpy="0 0 0.3732"/>
+  <parent link="end_base"/>
+  <child link="gear_left"/>
+</joint>
+
+<link name="finger_right">
+  <visual>
+    <geometry>
+      <mesh filename="package://aligned_arm/meshes/finger_right.STL"/>
+    </geometry>
+  </visual>
+</link>
+
+<joint name="finger_right_joint" type="fixed">
+  <origin xyz="0.030762 0 0.0025" rpy="0 0 0.98133"/>
+  <parent link="gear_right"/>
+  <child link="finger_right"/>
+</joint>
+
+<link name="finger_left">
+  <visual>
+    <geometry>
+      <mesh filename="package://aligned_arm/meshes/finger_left.STL"/>
+    </geometry>
+  </visual>
+</link>
+
+<joint name="finger_left_joint" type="fixed">
+  <origin xyz="0.030762 0 0" rpy="0 0 -0.68869"/>
+  <parent link="gear_left"/>
+  <child link="finger_left"/>
+</joint>
+
+<link name="anchor_right">
+  <visual>
+    <geometry>
+      <mesh filename="package://aligned_arm/meshes/anchor_right.STL"/>
+    </geometry>
+  </visual>
+</link>
+
+<joint name="anchor_right_joint" type="fixed">
+  <origin xyz="0.0525 -0.007 0.0068" rpy="0 0 -0.6321"/>
+  <parent link="end_base"/>
+  <child link="anchor_right"/>
+</joint>
+
+<link name="anchor_left">
+  <visual>
+    <geometry>
+      <mesh filename="package://aligned_arm/meshes/anchor_left.STL"/>
+    </geometry>
+  </visual>
+</link>
+
+<joint name="anchor_left_joint" type="fixed">
+  <origin xyz="0.0525 0.007 0.0068" rpy="0 0 0.31658"/>
+  <parent link="end_base"/>
+  <child link="anchor_left"/>
+</joint>
+
+<!-- ================= OLD GRIPPER ================= -->
+<!-- Resurrect this if you want the gripper to work and are brave -->
+ 
+  <!-- <link
+    name="end_base">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.4"/>
+      <inertia
+        ixx="0.01"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="0.01"
+        iyz="0.0"
+        izz="0.01"/>
+    </inertial>
+
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://aligned_arm/meshes/end_base.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://aligned_arm/meshes/end_base.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="gear_right">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.1"/>
+      <inertia
+        ixx="0.01"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="0.01"
+        iyz="0.0"
+        izz="0.01"/>
+    </inertial>
+
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://aligned_arm/meshes/gear_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://aligned_arm/meshes/gear_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="gear_right_joint"
+    type="revolute">
+    <origin
+      xyz="0.03 -0.015741 0.0043"
+      rpy="0 0 -0.60373" />
+    <parent
+      link="end_base" />
+    <child
+      link="gear_right" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="1"
+      velocity="1" />
+    <dynamics damping="0.5" friction="0.1"/>
+  </joint>
+  <link
+    name="finger_right">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.1"/>
+      <inertia
+        ixx="0.01"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="0.01"
+        iyz="0.0"
+        izz="0.01"/>
+    </inertial>
+
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://aligned_arm/meshes/finger_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://aligned_arm/meshes/finger_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="finger_right_joint"
+    type="revolute">
+    <origin
+      xyz="0.030762 0 0.0025"
+      rpy="0 0 0.98133" />
+    <parent
+      link="gear_right" />
+    <child
+      link="finger_right" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="1"
+      velocity="1" />
+    <mimic
+      joint="gear_right_joint"
+      multiplier="1"
+      offset="0" />
+    <dynamics damping="0.5" friction="0.1"/>
+  </joint>
+  <link
+    name="gear_left">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.1"/>
+      <inertia
+        ixx="0.01"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="0.01"
+        iyz="0.0"
+        izz="0.01"/>
+    </inertial>
+
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://aligned_arm/meshes/gear_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://aligned_arm/meshes/gear_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="gear_left_joint"
+    type="revolute">
+    <origin
+      xyz="0.0305 0.01226 0.0068"
+      rpy="0 0 0.3732" />
+    <parent
+      link="end_base" />
+    <child
+      link="gear_left" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="1"
+      velocity="1" />
+    <mimic
+      joint="gear_right_joint"
+      multiplier="-1"
+      offset="0" />
+    <dynamics damping="0.5" friction="0.1"/>
+  </joint>
+  <link
+    name="finger_left">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.1"/>
+      <inertia
+        ixx="0.01"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="0.01"
+        iyz="0.0"
+        izz="0.01"/>
+    </inertial>
+
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://aligned_arm/meshes/finger_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://aligned_arm/meshes/finger_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="finger_left_joint"
+    type="revolute">
+    <origin
+      xyz="0.030762 0 0"
+      rpy="0 0 -0.68869" />
+    <parent
+      link="gear_left" />
+    <child
+      link="finger_left" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="1"
+      velocity="1" />
+    <mimic
+      joint="gear_left_joint"
+      multiplier="1"
+      offset="0" />
+    <dynamics damping="0.5" friction="0.1"/>
+  </joint>
+  <link
+    name="anchor_right">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.1"/>
+      <inertia
+        ixx="0.01"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="0.01"
+        iyz="0.0"
+        izz="0.01"/>
+    </inertial>
+
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://aligned_arm/meshes/anchor_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://aligned_arm/meshes/anchor_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="anchor_right_joint"
+    type="revolute">
+    <origin
+      xyz="0.0525 -0.007 0.0068"
+      rpy="0 0 -0.6321" />
+    <parent
+      link="end_base" />
+    <child
+      link="anchor_right" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="1"
+      velocity="1" />
+    <mimic
+      joint="gear_right_joint"
+      multiplier="1"
+      offset="0" />
+    <dynamics damping="0.5" friction="0.1"/>
+  </joint>
+  <link
+    name="anchor_left">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.1"/>
+      <inertia
+        ixx="0.01"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="0.01"
+        iyz="0.0"
+        izz="0.01"/>
+    </inertial>
+
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://aligned_arm/meshes/anchor_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://aligned_arm/meshes/anchor_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="anchor_left_joint"
+    type="revolute">
+    <origin
+      xyz="0.0525 0.007 0.0068"
+      rpy="0 0 0.31658" />
+    <parent
+      link="end_base" />
+    <child
+      link="anchor_left" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="1"
+      velocity="1" />
+    <mimic
+      joint="gear_left_joint"
+      multiplier="1"
+      offset="0" />
+    <dynamics damping="0.5" friction="0.1"/>
+  </joint> -->
+
+  <link name="wrist_camera_link"/>
+  <joint name="wrist_camera_joint" type="fixed">
+    <parent link="end_base"/>
+    <child link="wrist_camera_link"/>
+    <origin xyz="0.05 0 0.05" rpy="0 0 0"/>
+  </joint>
+
+  <gazebo reference="wrist_camera_link">
+    <sensor type="camera" name="wrist_camera">
+      <always_on>true</always_on>
+      <update_rate>30</update_rate>
+
+      <camera>
+        <horizontal_fov>1.047</horizontal_fov>
+        <image>
+          <width>640</width>
+          <height>480</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.01</near>
+          <far>10.0</far>
+        </clip>
+      </camera>
+
+      <plugin name="gazebo_ros_camera" filename="libgazebo_ros_camera.so">
+        <camera_name>wrist_camera</camera_name>
+        <frame_name>wrist_camera_link</frame_name>
+        <image_topic_name>image_raw</image_topic_name>
+        <camera_info_topic_name>camera_info</camera_info_topic_name>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+  <!-- JOINTS -->
+  <joint name="world_joint" type="fixed">
+    <parent link="world"/>
+    <child link="base_link"/>
+  </joint>
+
+  <joint name="bas_jnt"
+    type="continuous">
+    <origin
+      xyz="0 0 0.037367"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="shoulder" />
+    <axis
+      xyz="0 0 -1" />
+    <dynamics damping="2.0" friction="0.1"/>
+
+  </joint>
+  <joint name="shl_jnt"
+    type="continuous">
+    <origin
+      xyz="-0.001501 0 0.071733"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="shoulder" />
+    <child
+      link="elbow" />
+    <axis
+      xyz="0 0 -1" />
+    <dynamics damping="2.0" friction="0.1"/>
+    
+  </joint>
+
+  <joint name="elb_jnt"
+    type="continuous">
+    <origin
+      xyz="0.103 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="elbow" />
+    <child
+      link="wrist" />
+    <axis
+      xyz="0 0 -1" />
+    <dynamics damping="2.0" friction="0.1"/>
+
+   </joint>
+   <joint
+    name="wri_jnt"
+    type="continuous">
+    <origin
+      xyz="0.096499 0.0015 0"
+      rpy="0 0 1.5708" />
+    <parent
+      link="wrist" />
+    <child
+      link="wrist2" />
+    <axis
+      xyz="0 0 -1" />
+    <dynamics damping="2.0" friction="0.1"/>
+  </joint>
+  
+  <!-- GRIPPER JOINT  -->
+    <joint
+    name="end_joint"
+    type="revolute">
+    <origin
+      xyz="0.023 -0.045 -0.02"
+      rpy="1.57 0 -1.57" />
+      <!-- rpy = "0 0 0" />-->
+    <parent
+      link="wrist2" />
+    <child
+      link="end_base" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="1"
+      velocity="1" />
+    <dynamics damping="2.0" friction="0.1"/>
+  </joint>
+</robot>
