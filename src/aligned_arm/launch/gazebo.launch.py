@@ -8,6 +8,7 @@ import os
 def generate_launch_description():
 
     pkg_share = get_package_share_directory('aligned_arm')
+    #urdf_path = os.path.join(pkg_share, 'urdf', 'arm_with_digger.urdf')
     urdf_path = os.path.join(pkg_share, 'urdf', 'aligned_arm.urdf')
     #urdf_path = os.path.join(pkg_share, 'urdf', 'gripper.urdf')
 

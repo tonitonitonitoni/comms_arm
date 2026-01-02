@@ -4,7 +4,9 @@ from ament_index_python.packages import get_package_share_directory
 import launch_ros
 import os
 package_name='aligned_arm'
-urdf_path = 'urdf/aligned_arm.urdf'
+urdf_path = 'urdf/arm_with_digger.urdf'
+
+#urdf_path = 'urdf/aligned_arm.urdf'
 #urdf_path = 'urdf/gripper.urdf'
 
 def generate_launch_description():
